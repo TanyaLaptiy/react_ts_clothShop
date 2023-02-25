@@ -1,0 +1,45 @@
+.root {
+  align-items: center;
+  margin-bottom: 80px;
+
+  li {
+    margin-bottom: 10px;
+    float: left;
+    border: 1px solid #2772c7;
+    border-radius: 30px;
+    margin-right: 10px;
+    min-width: 50px;
+    max-width: 120px;
+    padding: 10px;
+    text-align: center;
+    &:hover {
+      background-color: #2772c7;
+      a {
+        color: #fff;
+      }
+    }
+
+    a {
+      min-width: 50px;
+      max-width: 120px;
+      padding: 10px;
+
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #2772c7;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      background-color: #2772c7;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
